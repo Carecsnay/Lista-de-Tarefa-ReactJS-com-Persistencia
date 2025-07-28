@@ -30,7 +30,7 @@ function App() {
     ]);
     return (
         <div className="w-screen h-screen bg-slate-400 flex items-center justify-center flex-col p-6">
-            <div className="w-[500px] bg-slate-500 py-10 p-4 rounded-xl">
+            <div className="w-[500px] bg-slate-500 py-12 px-6 rounded-xl">
                 <h1 className="text-3xl text-black font-bold text-center pb-4">Gerenciador de Tarefas</h1>
                 <Tasks tasks={tasks} />
             </div>
