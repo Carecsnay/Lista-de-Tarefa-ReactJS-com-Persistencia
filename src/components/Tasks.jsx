@@ -10,18 +10,20 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
               onClick={() => {
                 onTaskClick(tasks.id);
               }}
-              className={`w-full rounded-md bg-slate-300 p-2 text-left font-semibold text-gray-800 ${tasks.isCompleted && "text-gray-400 line-through"}`}
+              className={`w-full rounded-md bg-slate-300 p-2 text-left font-semibold text-gray-800 ${tasks.isCompleted && "text-opacity-20 line-through"}`}
             >
               {tasks.title}
             </button>
-            <button className="rounded-md bg-slate-300 p-2 font-semibold text-gray-700">
+            <button
+              className={`rounded-md bg-slate-300 p-2 font-semibold text-gray-700 ${tasks.isCompleted && "text-opacity-20"}`}
+            >
               <ChevronRightIcon />
             </button>
             <button
               onClick={() => {
                 onDeleteTaskClick(tasks.id);
               }}
-              className="rounded-md bg-slate-300 p-2 font-semibold text-gray-700"
+              className={`rounded-md bg-slate-300 p-2 font-semibold text-gray-700 ${tasks.isCompleted && "text-opacity-20"}`}
             >
               <Trash2 />
             </button>
