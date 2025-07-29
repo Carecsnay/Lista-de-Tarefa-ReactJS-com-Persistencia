@@ -16,6 +16,7 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
             </button>
             <button
               className={`rounded-md bg-slate-300 p-2 font-semibold text-gray-700 ${tasks.isCompleted && "text-opacity-20"}`}
+              disabled={tasks.isCompleted}
             >
               <ChevronRightIcon />
             </button>
@@ -23,7 +24,7 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
               onClick={() => {
                 onDeleteTaskClick(tasks.id);
               }}
-              className={`rounded-md bg-slate-300 p-2 font-semibold text-gray-700 ${tasks.isCompleted && "text-opacity-20"}`}
+              className={`rounded-md bg-slate-300 p-2 font-semibold text-gray-700`}
             >
               <Trash2 />
             </button>
