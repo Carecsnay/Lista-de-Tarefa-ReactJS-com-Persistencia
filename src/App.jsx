@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Tasks from "./components/Tasks";
+import AddTask from "./components/AddTask";
 
 function App() {
   const [tasks, setTasks] = useState([
@@ -47,10 +48,11 @@ function App() {
 
   return (
     <div className="flex h-screen w-screen flex-col items-center justify-center bg-slate-400 p-6">
-      <div className="min-w-[500px] rounded-xl bg-slate-500 px-6 py-12">
-        <h1 className="pb-4 text-center text-3xl font-bold text-black opacity-90">
+      <div className="min-w-[500px] space-y-4 rounded-xl bg-slate-500 px-6 py-12">
+        <h1 className="pb-3 text-center text-3xl font-bold text-black opacity-90">
           Gerenciador de Tarefas
         </h1>
+        <AddTask />
         <Tasks
           tasks={tasks}
           onTaskClick={onTaskClick}
