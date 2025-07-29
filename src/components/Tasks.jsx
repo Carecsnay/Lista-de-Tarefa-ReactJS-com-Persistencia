@@ -3,7 +3,7 @@ import { ChevronRightIcon, Trash2 } from "lucide-react";
 function Tasks(props) {
   return (
     <div>
-      <ul className="space-y-4 rounded-lg bg-slate-400 p-4 shadow">
+      <ul className="flex min-h-[250px] flex-col justify-center space-y-4 rounded-lg bg-slate-400 p-4 shadow">
         {props.tasks.map((tasks) => (
           <li className="flex gap-2" key={tasks.id}>
             <button
