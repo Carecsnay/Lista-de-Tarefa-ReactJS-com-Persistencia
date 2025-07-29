@@ -31,17 +31,15 @@ function App() {
 
   function onTaskClick(TaskId) {
     const newTasks = tasks.map((task) => {
-      if (task.id === TaskId)
-        return {
-          ...tasks,
-          isCompleted: !task.isCompleted,
-        };
-      else {
+      if (task.id === TaskId) {
+        return { ...task, isCompleted: !task.isCompleted };
+      } else {
         return task;
       }
     });
-    setTasks(newTasks);
+    setTasks(newTasks)
   }
+
   return (
     <div className="flex h-screen w-screen flex-col items-center justify-center bg-slate-400 p-6">
       <div className="w-[500px] rounded-xl bg-slate-500 px-6 py-12">
