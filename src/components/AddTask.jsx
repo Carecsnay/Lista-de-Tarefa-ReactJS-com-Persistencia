@@ -15,10 +15,10 @@ function AddTask({ addTaskSubmit }) {
           setTitle(event.target.value);
         }}
       />
-      <input
+      <textarea
         type="text"
         placeholder="Descrição da tarefa"
-        className="rounded-md bg-slate-300 p-2 font-semibold text-gray-700 placeholder-gray-500 outline-gray-400"
+        className="h-24 resize-none rounded-md bg-slate-300 p-2 font-semibold text-gray-700 placeholder-gray-500 outline-gray-400"
         value={description}
         onChange={(event) => {
           setDescription(event.target.value);
