@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 function AddTask({ addTaskSubmit }) {
-  const [title, setTitle] = useState([""]);
-  const [description, setDescription] = useState([""]);
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
 
   return (
     <div className="flex flex-col justify-center space-y-4 rounded-lg bg-slate-400 p-4 shadow">
@@ -25,7 +25,9 @@ function AddTask({ addTaskSubmit }) {
         }}
       />
       <button
-        onClick={() => addTaskSubmit(title, description)}
+        onClick={() => 
+          {if(!title || !description) {return alert("Campo Título ou Descrição em branco!")}
+          addTaskSubmit(title, description)}}
         className="rounded-md bg-slate-500 p-2 font-semibold uppercase text-black opacity-90 hover:bg-black hover:text-white"
       >
         Adicionar tarefa
