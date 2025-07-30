@@ -6,15 +6,18 @@ function AddTask() {
         name=""
         id=""
         placeholder="Título da tarefa"
-        className="placeholder-slate-30 rounded-md bg-slate-300 p-2 placeholder-gray-500 outline-gray-400"
+        className="rounded-md bg-slate-300 p-2 font-semibold text-gray-700 placeholder-gray-500 outline-gray-400"
       />
       <input
         type="text"
         name=""
         id=""
         placeholder="Descrição da tarefa"
-        className="placeholder-slate-30 rounded-md bg-slate-300 p-2 placeholder-gray-500 outline-gray-400"
+        className="rounded-md bg-slate-300 p-2 font-semibold text-gray-700 placeholder-gray-500 outline-gray-400"
       />
+      <button className="rounded-md bg-slate-500 p-2 font-semibold uppercase text-black opacity-90 hover:bg-black hover:text-white">
+        Adicionar tarefa
+      </button>
     </div>
   );
 }
