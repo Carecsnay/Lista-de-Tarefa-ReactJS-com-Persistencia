@@ -30,6 +30,16 @@ function App() {
     },
   ]);
 
+  function addTaskSubmit(title, description) {
+    const newTask = {
+      id: 1,
+      title,
+      description,
+      isCompleted: false,
+    };
+    setTasks([...tasks, newTask]);
+  }
+
   function onTaskClick(TaskId) {
     const newTasks = tasks.map((task) => {
       if (task.id === TaskId) {
@@ -52,7 +62,7 @@ function App() {
         <h1 className="pb-3 text-center text-3xl font-bold text-black opacity-90">
           Gerenciador de Tarefas
         </h1>
-        <AddTask />
+        <AddTask addTaskSubmit={addTaskSubmit} />
         <Tasks
           tasks={tasks}
           onTaskClick={onTaskClick}
