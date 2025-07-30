@@ -25,9 +25,12 @@ function AddTask({ addTaskSubmit }) {
         }}
       />
       <button
-        onClick={() => 
-          {if(!title || !description) {return alert("Campo Título ou Descrição em branco!")}
-          addTaskSubmit(title, description)}}
+        onClick={() => {
+          if (!title.trim() || !description.trim()) {
+            return alert("Campo Título ou Descrição em branco!");
+          }
+          addTaskSubmit(title, description);
+        }}
         className="rounded-md bg-slate-500 p-2 font-semibold uppercase text-black opacity-90 hover:bg-black hover:text-white"
       >
         Adicionar tarefa
