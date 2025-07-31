@@ -11,7 +11,7 @@ function TaskPage() {
     navigate(-1);
   }
   return (
-    <div className="flex h-screen w-screen flex-col items-center bg-slate-500 p-6">
+    <div className="flex justify-center h-screen w-screen flex-col items-center bg-slate-500 p-6">
       <div className="space-y-4 rounded-md bg-slate-400 p-4">
         <p className="w-[500px] rounded-md bg-slate-300 p-2 text-center font-semibold uppercase text-gray-700">
           {title}
