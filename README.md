@@ -58,7 +58,7 @@ Acesse o projeto em funcionamento através do seguinte link:
 
 ## Captura de Tela 📸
 
-![Doc1](<img width="1339" height="769" alt="Macbook-Air-localhost" src="https://github.com/user-attachments/assets/fd371a80-5b88-4781-9ff6-cb6f65613eed" />)
+<img width="1339" height="769" alt="Macbook-Air-localhost" src="https://github.com/user-attachments/assets/fd371a80-5b88-4781-9ff6-cb6f65613eed" />
 
 ---
 
