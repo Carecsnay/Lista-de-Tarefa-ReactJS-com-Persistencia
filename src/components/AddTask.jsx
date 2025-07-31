@@ -31,7 +31,7 @@ function AddTask({ addTaskSubmit }) {
           }
           addTaskSubmit(title, description);
         }}
-        className="rounded-md bg-slate-500 p-2 font-semibold uppercase text-black opacity-90 hover:bg-black hover:text-white"
+        className="rounded-md bg-slate-300 p-2 font-semibold uppercase text-gray-700 opacity-90 hover:bg-slate-500 hover:text-white"
       >
         Adicionar tarefa
       </button>

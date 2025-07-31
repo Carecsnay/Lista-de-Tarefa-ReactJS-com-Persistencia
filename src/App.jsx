@@ -66,13 +66,13 @@ function App() {
     const query = new URLSearchParams();
     query.set("title", task.title);
     query.set("description", task.description);
-    navigate(`/task?${query.toString()}}`);
+    navigate(`/task?${query.toString()}`);
   }
 
   return (
     <div className="flex h-screen w-screen flex-col items-center justify-center bg-slate-400 p-6">
       <div className="min-w-[500px] space-y-4 rounded-xl bg-slate-500 px-6 py-12">
-        <h1 className="pb-3 text-center text-3xl font-bold text-black opacity-90">
+        <h1 className="pb-3 text-center text-3xl font-bold text-black opacity-60">
           Gerenciador de Tarefas
         </h1>
         <AddTask addTaskSubmit={addTaskSubmit} />

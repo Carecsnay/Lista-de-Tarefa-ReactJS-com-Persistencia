@@ -25,7 +25,7 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick, seeDetailsClick }) {
               onClick={() => {
                 onDeleteTaskClick(task.id);
               }}
-              className={`rounded-md bg-slate-300 p-2 font-semibold text-gray-700`}
+              className={`rounded-md bg-slate-300 p-2 font-semibold text-gray-700 hover:bg-red-300 hover:text-red-600`}
             >
               <Trash2 />
             </button>
