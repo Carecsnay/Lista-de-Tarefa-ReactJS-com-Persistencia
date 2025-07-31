@@ -4,38 +4,42 @@ import { useNavigate } from "react-router-dom";
 
 import AddTask from "./components/AddTask";
 import Tasks from "./components/Tasks";
+import { useEffect } from "react";
 
 function App() {
   const navigate = useNavigate();
 
   const [tasks, setTasks] = useState([
     {
-      id: 1,
+      id: v4(),
       title: "Estudar React",
       description: "Antes do mega hiper super evento FSC acontecer!",
       isCompleted: true,
     },
     {
-      id: 2,
+      id: v4(),
       title: "Fazer compras",
       description:
         "Comprar itens essenciais no supermercado às 14:30 do dia 29/07/2025",
       isCompleted: false,
     },
     {
-      id: 3,
+      id: v4(),
       title: "Reunião com o time",
       description: "Participar do clube da leitura no dia 31/07/2025",
       isCompleted: true,
     },
     {
-      id: 4,
-      title: "Ir à academia",
+      id: v4(),
+      title: "Praticar exercícios ",
       description: "Pra que? se eu já tenho tudo em casa?",
       isCompleted: false,
     },
   ]);
 
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
   function addTaskSubmit(title, description) {
     const newTask = {
       id: v4(),
