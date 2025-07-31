@@ -32,7 +32,7 @@ function App() {
     {
       id: v4(),
       title: "Praticar exercícios ",
-      description: "Pra que? se eu já tenho tudo em casa?",
+      description: "Todos os dias, pelo menos 1h",
       isCompleted: false,
     },
   ]);
