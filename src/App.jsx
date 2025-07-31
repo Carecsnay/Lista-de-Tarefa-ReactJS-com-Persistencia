@@ -1,32 +1,37 @@
 import { useState } from "react";
-import Tasks from "./components/Tasks";
-import AddTask from "./components/AddTask";
 import { v4 } from "uuid";
+import { useNavigate } from "react-router-dom";
+
+import AddTask from "./components/AddTask";
+import Tasks from "./components/Tasks";
 
 function App() {
+  const navigate = useNavigate();
+
   const [tasks, setTasks] = useState([
     {
       id: 1,
       title: "Estudar React",
-      description: "28 de julho de 2025 às 10:00",
+      description: "Antes do mega hiper super evento FSC acontecer!",
       isCompleted: true,
     },
     {
       id: 2,
       title: "Fazer compras",
-      description: "29 de julho de 2025 às 14:30",
+      description:
+        "Comprar itens essenciais no supermercado às 14:30 do dia 29/07/2025",
       isCompleted: false,
     },
     {
       id: 3,
       title: "Reunião com o time",
-      description: "30 de julho de 2025 às 09:00",
+      description: "Participar do clube da leitura no dia 31/07/2025",
       isCompleted: true,
     },
     {
       id: 4,
       title: "Ir à academia",
-      description: "31 de julho de 2025 às 18:00",
+      description: "Pra que? se eu já tenho tudo em casa?",
       isCompleted: false,
     },
   ]);
@@ -57,6 +62,13 @@ function App() {
     setTasks(newTasks);
   }
 
+  function seeDetailsClick(task) {
+    const query = new URLSearchParams();
+    query.set("title", task.title);
+    query.set("description", task.description);
+    navigate(`/task?title=${query.toString()}}`);
+  }
+
   return (
     <div className="flex h-screen w-screen flex-col items-center justify-center bg-slate-400 p-6">
       <div className="min-w-[500px] space-y-4 rounded-xl bg-slate-500 px-6 py-12">
@@ -68,6 +80,7 @@ function App() {
           tasks={tasks}
           onTaskClick={onTaskClick}
           onDeleteTaskClick={onDeleteTaskClick}
+          seeDetailsClick={seeDetailsClick}
         />
       </div>
     </div>
