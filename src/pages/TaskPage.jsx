@@ -7,7 +7,7 @@ function TaskPage() {
   const description = searchParams.get("description");
 
   const navigate = useNavigate();
-  function back() {
+  function onBackClick() {
     navigate(-1);
   }
   return (
@@ -20,8 +20,8 @@ function TaskPage() {
           {description}
         </p>
         <button
-          onClick={back}
-          className="w-full rounded-md bg-slate-300 p-2 font-semibold uppercase text-gray-700  hover:bg-slate-500 hover:text-white"
+          onClick={onBackClick}
+          className="w-full rounded-md bg-slate-300 p-2 font-semibold uppercase text-gray-700 hover:bg-slate-500 hover:text-white"
         >
           Voltar
         </button>
