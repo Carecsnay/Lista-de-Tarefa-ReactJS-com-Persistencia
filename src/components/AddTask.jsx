@@ -30,6 +30,8 @@ function AddTask({ addTaskSubmit }) {
             return alert("Campo Título ou Descrição em branco!");
           }
           addTaskSubmit(title, description);
+          setDescription("");
+          setTitle("");
         }}
         className="rounded-md bg-slate-300 p-2 font-semibold uppercase text-gray-700 opacity-90 hover:bg-slate-500 hover:text-white"
       >
