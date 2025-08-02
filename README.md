@@ -62,6 +62,8 @@ Acesse o projeto em funcionamento através do seguinte link:
 </br>
 </br>
 <img width="1339" height="769" alt="Macbook-Air-localhost" src="https://github.com/user-attachments/assets/bb193418-fbe9-44f8-be3c-c8c1c8e680b8" />
+</br>
+</br>
 <div align="center">
   <video width="800" controls alt="Macbook-Air-localhost" src="https://github.com/user-attachments/assets/104a0412-99a7-495a-98ef-0f03b487cf71" />
 </div>
