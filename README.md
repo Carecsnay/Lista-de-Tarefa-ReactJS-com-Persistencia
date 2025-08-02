@@ -2,12 +2,11 @@
 
 ## Sobre o Projeto 🔎
 
-Este projeto é um Gerenciador de Tarefas desenvolvido em ReactJS, ele permite adicionar tarefas, marcá-las como concluídas e excluí-las, além de oferecer feedback visual para facilitar o gerenciamento das atividades.
+Este projeto é um Gerenciador de Tarefas desenvolvido em ReactJS. Ele permite adicionar tarefas, marcá-las como concluídas, excluí-las e armazená-las no navegador (localStorage) para garantir que as atividades sejam preservadas mesmo após recarregar a página. Além disso, oferece feedback visual para facilitar o gerenciamento das tarefas.
 
-O objetivo do projeto é revisar os princípios do React, como os hooks useState e useEffect, além de explorar outros conceitos, como useNavigate e useSearchParams.
+O objetivo do projeto é revisar os princípios do React, como os hooks useState e useEffect, além de explorar outros conceitos, como useNavigate e useSearchParams. Também foi implementado o localStorage para persistência dos dados.
 
-Para a estilização, foi utilizado o Tailwind CSS. A biblioteca Lucide React foi usada para a adição de ícones, e o pacote UUID foi implementado para gerar IDs aleatórios, também foi utilizado o react-dom para fazer a navegação entre rotas.
-
+Para a estilização, foi utilizado o Tailwind CSS. A biblioteca Lucide React foi usada para a adição de ícones, e o pacote UUID foi implementado para gerar IDs aleatórios. O react-dom foi utilizado para a navegação entre rotas.
 ---
 
 ## Deploy 🌐
