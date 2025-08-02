@@ -12,7 +12,7 @@ Para a estilização, foi utilizado o Tailwind CSS. A biblioteca Lucide React fo
 ## Deploy 🌐
 
 Acesse o projeto em funcionamento através do seguinte link: </br>
-🟢[Vercel](https://lista-de-tarefa-react-js-com-persis.vercel.app/)
+🟢[Vercel](https://todo-list-reactjs-fsc.vercel.app/)
 
 ---
 
