@@ -10,31 +10,31 @@ function App() {
   const navigate = useNavigate();
 
   const defaultTasks = [
-    {
-      id: v4(),
-      title: "Estudar React",
-      description: "Antes do mega hiper super evento do FSC acontecer!",
-      isCompleted: true,
-    },
-    {
-      id: v4(),
-      title: "Fazer compras",
-      description:
-        "Comprar itens essenciais no supermercado às 14:30 do dia 29/07/2025",
-      isCompleted: false,
-    },
-    {
-      id: v4(),
-      title: "Reunião com o time",
-      description: "Participar do clube da leitura no dia 31/07/2025",
-      isCompleted: true,
-    },
-    {
-      id: v4(),
-      title: "Praticar exercícios ",
-      description: "Todos os dias, pelo menos 1h",
-      isCompleted: false,
-    },
+    // {
+    //   id: v4(),
+    //   title: "Estudar React",
+    //   description: "Antes do mega hiper super evento do FSC acontecer!",
+    //   isCompleted: true,
+    // },
+    // {
+    //   id: v4(),
+    //   title: "Fazer compras",
+    //   description:
+    //     "Comprar itens essenciais no supermercado às 14:30 do dia 29/07/2025",
+    //   isCompleted: false,
+    // },
+    // {
+    //   id: v4(),
+    //   title: "Reunião com o time",
+    //   description: "Participar do clube da leitura no dia 31/07/2025",
+    //   isCompleted: true,
+    // },
+    // {
+    //   id: v4(),
+    //   title: "Praticar exercícios ",
+    //   description: "Todos os dias, pelo menos 1h",
+    //   isCompleted: false,
+    // },
   ];
 
   const savedTasks = localStorage.getItem("tasks");
